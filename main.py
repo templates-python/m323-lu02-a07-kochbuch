@@ -1,12 +1,6 @@
-def calculate():
-    """
-    calculates the total
-    :return: None
-    """
-    price = 15.75
-    quantity = 3  # TODO change quantity to 5
-    print(f'Total: {price * quantity}')
-
+# Dein Code kommt hier hin
 
 if __name__ == '__main__':
-    calculate()
+    # Beispiel für die Datenstruktur eines Rezepts
+    recipe_json = '{"title": "Spaghetti Bolognese", "ingredients": {"Spaghetti": 400, "Tomato Sauce": 300, "Minced Meat": 500}, "servings": 4}'
+    # Dein Code kommt hier hin
