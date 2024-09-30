@@ -1,6 +1,7 @@
 # Dein Code kommt hier hin
 import json
 
+
 def adjust_recipe(original_recipe, num_people):
     """
     Adjusts the recipe based on the number of people.
@@ -22,9 +23,10 @@ def adjust_recipe(original_recipe, num_people):
     adjusted_recipe = {
         'title': original_recipe['title'],
         'ingredients': adjusted_ingredients,
-        'servings': num_people
+        'servings': num_people,
     }
     return adjusted_recipe
+
 
 def load_recipe(json_string):
     """
@@ -38,6 +40,7 @@ def load_recipe(json_string):
     """
     return json.loads(json_string)
 
+
 if __name__ == '__main__':
     # Example JSON string for a recipe
     recipe_json = '{"title": "Spaghetti Bolognese", "ingredients": {"Spaghetti": 400, "Tomato Sauce": 300, "Minced Meat": 500}, "servings": 4}'
@@ -45,5 +48,5 @@ if __name__ == '__main__':
     original_recipe = load_recipe(recipe_json)
     # Adjust the recipe for 2 people
     adjusted_recipe = adjust_recipe(original_recipe, 8)
-    print(f"Original Recipe: {original_recipe}")
-    print(f"Adjusted Recipe: {adjusted_recipe}")
+    print(f'Original Recipe: {original_recipe}')
+    print(f'Adjusted Recipe: {adjusted_recipe}')
